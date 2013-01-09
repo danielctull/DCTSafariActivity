@@ -9,9 +9,14 @@
 #import "ViewController.h"
 #import <DCTSafariActivity/DCTSafariActivity.h>
 
-@implementation ViewController
+@interface ViewController () <UIPopoverControllerDelegate>
+@end
 
-- (IBAction)showActivities:(id)sender {
+@implementation ViewController {
+	UIPopoverController *_popoverController;
+}
+
+- (IBAction)showActivities:(UIButton *)sender {
 
 	NSArray *items = @[[NSURL URLWithString:@"http://apple.com"]];
 	NSArray *activities = @[[DCTSafariActivity new]];
@@ -24,7 +29,18 @@
 		return;
 	}
 
+	_popoverController = [[UIPopoverController alloc] initWithContentViewController:activityViewController];
+	_popoverController.delegate = self;
 
+	[_popoverController presentPopoverFromRect:sender.frame
+										inView:self.view
+					  permittedArrowDirections:UIPopoverArrowDirectionAny
+									  animated:YES];
+	_popoverController.passthroughViews = @[];
+}
+
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController {
+	_popoverController = nil;
 }
 
 @end
