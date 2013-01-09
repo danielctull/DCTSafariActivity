@@ -17,7 +17,7 @@
 }
 
 - (NSString *)activityTitle {
-	return NSLocalizedString(@"Open in Safari", @"DCTSafariActivity");
+	return [[[self class] bundle] localizedStringForKey:@"Open in Safari" value:@"Open in Safari" table:nil];
 }
 
 - (UIImage *)activityImage {
