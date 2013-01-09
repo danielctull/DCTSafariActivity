@@ -14,6 +14,21 @@
 		242510D2169D6F2600BAA861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 242510D0169D6F2500BAA861 /* InfoPlist.strings */; };
 		242510DB169D706A00BAA861 /* DCTSafariActivity~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 242510D9169D706A00BAA861 /* DCTSafariActivity~ipad.png */; };
 		242510DC169D706A00BAA861 /* DCTSafariActivity~ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 242510DA169D706A00BAA861 /* DCTSafariActivity~ipad@2x.png */; };
+		242510E8169D723E00BAA861 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242510E7169D723E00BAA861 /* UIKit.framework */; };
+		242510E9169D723E00BAA861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242510B8169D6F0600BAA861 /* Foundation.framework */; };
+		242510EB169D723E00BAA861 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242510EA169D723E00BAA861 /* CoreGraphics.framework */; };
+		242510F1169D723E00BAA861 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 242510EF169D723E00BAA861 /* InfoPlist.strings */; };
+		242510F3169D723E00BAA861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 242510F2169D723E00BAA861 /* main.m */; };
+		242510F7169D723E00BAA861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242510F6169D723E00BAA861 /* AppDelegate.m */; };
+		242510F9169D723E00BAA861 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 242510F8169D723E00BAA861 /* Default.png */; };
+		242510FB169D723E00BAA861 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 242510FA169D723E00BAA861 /* Default@2x.png */; };
+		242510FD169D723E00BAA861 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 242510FC169D723E00BAA861 /* Default-568h@2x.png */; };
+		24251104169D725B00BAA861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24251102169D725B00BAA861 /* ViewController.m */; };
+		24251105169D725B00BAA861 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24251103169D725B00BAA861 /* ViewController.xib */; };
+		24251106169D72A900BAA861 /* libDCTSafariActivity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242510B5169D6F0600BAA861 /* libDCTSafariActivity.a */; };
+		24251107169D72AC00BAA861 /* DCTSafariActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 242510CA169D6F2500BAA861 /* DCTSafariActivity.bundle */; };
+		2425110A169D764300BAA861 /* DCTSafariActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251108169D764300BAA861 /* DCTSafariActivity.png */; };
+		2425110B169D764300BAA861 /* DCTSafariActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251109169D764300BAA861 /* DCTSafariActivity@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +65,23 @@
 		242510D1169D6F2500BAA861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		242510D9169D706A00BAA861 /* DCTSafariActivity~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DCTSafariActivity~ipad.png"; sourceTree = "<group>"; };
 		242510DA169D706A00BAA861 /* DCTSafariActivity~ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DCTSafariActivity~ipad@2x.png"; sourceTree = "<group>"; };
+		242510E5169D723E00BAA861 /* DCTSafariActivityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTSafariActivityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		242510E7169D723E00BAA861 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		242510EA169D723E00BAA861 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		242510EE169D723E00BAA861 /* DCTSafariActivityDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTSafariActivityDemo-Info.plist"; sourceTree = "<group>"; };
+		242510F0169D723E00BAA861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		242510F2169D723E00BAA861 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		242510F4169D723E00BAA861 /* DCTSafariActivityDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTSafariActivityDemo-Prefix.pch"; sourceTree = "<group>"; };
+		242510F5169D723E00BAA861 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		242510F6169D723E00BAA861 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		242510F8169D723E00BAA861 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		242510FA169D723E00BAA861 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		242510FC169D723E00BAA861 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24251101169D725B00BAA861 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24251102169D725B00BAA861 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24251103169D725B00BAA861 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		24251108169D764300BAA861 /* DCTSafariActivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DCTSafariActivity.png; sourceTree = "<group>"; };
+		24251109169D764300BAA861 /* DCTSafariActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DCTSafariActivity@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		242510E2169D723E00BAA861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24251106169D72A900BAA861 /* libDCTSafariActivity.a in Frameworks */,
+				242510E8169D723E00BAA861 /* UIKit.framework in Frameworks */,
+				242510E9169D723E00BAA861 /* Foundation.framework in Frameworks */,
+				242510EB169D723E00BAA861 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +120,7 @@
 			children = (
 				242510BA169D6F0600BAA861 /* DCTSafariActivity */,
 				242510CD169D6F2500BAA861 /* DCTSafariActivityBundle */,
+				242510EC169D723E00BAA861 /* DCTSafariActivityDemo */,
 				242510B7169D6F0600BAA861 /* Frameworks */,
 				242510B6169D6F0600BAA861 /* Products */,
 			);
@@ -87,6 +131,7 @@
 			children = (
 				242510B5169D6F0600BAA861 /* libDCTSafariActivity.a */,
 				242510CA169D6F2500BAA861 /* DCTSafariActivity.bundle */,
+				242510E5169D723E00BAA861 /* DCTSafariActivityDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +141,8 @@
 			children = (
 				242510B8169D6F0600BAA861 /* Foundation.framework */,
 				242510CB169D6F2500BAA861 /* CoreFoundation.framework */,
+				242510E7169D723E00BAA861 /* UIKit.framework */,
+				242510EA169D723E00BAA861 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,12 +159,41 @@
 		242510CD169D6F2500BAA861 /* DCTSafariActivityBundle */ = {
 			isa = PBXGroup;
 			children = (
+				24251108169D764300BAA861 /* DCTSafariActivity.png */,
+				24251109169D764300BAA861 /* DCTSafariActivity@2x.png */,
 				242510D9169D706A00BAA861 /* DCTSafariActivity~ipad.png */,
 				242510DA169D706A00BAA861 /* DCTSafariActivity~ipad@2x.png */,
 				242510CF169D6F2500BAA861 /* DCTSafariActivityBundle-Info.plist */,
 				242510D0169D6F2500BAA861 /* InfoPlist.strings */,
 			);
 			path = DCTSafariActivityBundle;
+			sourceTree = "<group>";
+		};
+		242510EC169D723E00BAA861 /* DCTSafariActivityDemo */ = {
+			isa = PBXGroup;
+			children = (
+				242510F5169D723E00BAA861 /* AppDelegate.h */,
+				242510F6169D723E00BAA861 /* AppDelegate.m */,
+				24251101169D725B00BAA861 /* ViewController.h */,
+				24251102169D725B00BAA861 /* ViewController.m */,
+				24251103169D725B00BAA861 /* ViewController.xib */,
+				242510ED169D723E00BAA861 /* Supporting Files */,
+			);
+			path = DCTSafariActivityDemo;
+			sourceTree = "<group>";
+		};
+		242510ED169D723E00BAA861 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				242510EE169D723E00BAA861 /* DCTSafariActivityDemo-Info.plist */,
+				242510EF169D723E00BAA861 /* InfoPlist.strings */,
+				242510F2169D723E00BAA861 /* main.m */,
+				242510F4169D723E00BAA861 /* DCTSafariActivityDemo-Prefix.pch */,
+				242510F8169D723E00BAA861 /* Default.png */,
+				242510FA169D723E00BAA861 /* Default@2x.png */,
+				242510FC169D723E00BAA861 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +234,23 @@
 			productReference = 242510CA169D6F2500BAA861 /* DCTSafariActivity.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		242510E4169D723E00BAA861 /* DCTSafariActivityDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 242510FE169D723E00BAA861 /* Build configuration list for PBXNativeTarget "DCTSafariActivityDemo" */;
+			buildPhases = (
+				242510E1169D723E00BAA861 /* Sources */,
+				242510E2169D723E00BAA861 /* Frameworks */,
+				242510E3169D723E00BAA861 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTSafariActivityDemo;
+			productName = DCTSafariActivityDemo;
+			productReference = 242510E5169D723E00BAA861 /* DCTSafariActivityDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +274,7 @@
 			targets = (
 				242510B4169D6F0600BAA861 /* DCTSafariActivity */,
 				242510C9169D6F2500BAA861 /* DCTSafariActivityBundle */,
+				242510E4169D723E00BAA861 /* DCTSafariActivityDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +287,21 @@
 				242510D2169D6F2600BAA861 /* InfoPlist.strings in Resources */,
 				242510DB169D706A00BAA861 /* DCTSafariActivity~ipad.png in Resources */,
 				242510DC169D706A00BAA861 /* DCTSafariActivity~ipad@2x.png in Resources */,
+				2425110A169D764300BAA861 /* DCTSafariActivity.png in Resources */,
+				2425110B169D764300BAA861 /* DCTSafariActivity@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		242510E3169D723E00BAA861 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24251107169D72AC00BAA861 /* DCTSafariActivity.bundle in Resources */,
+				242510F1169D723E00BAA861 /* InfoPlist.strings in Resources */,
+				242510F9169D723E00BAA861 /* Default.png in Resources */,
+				242510FB169D723E00BAA861 /* Default@2x.png in Resources */,
+				242510FD169D723E00BAA861 /* Default-568h@2x.png in Resources */,
+				24251105169D725B00BAA861 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +323,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		242510E1169D723E00BAA861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				242510F3169D723E00BAA861 /* main.m in Sources */,
+				242510F7169D723E00BAA861 /* AppDelegate.m in Sources */,
+				24251104169D725B00BAA861 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,6 +348,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				242510D1169D6F2500BAA861 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		242510EF169D723E00BAA861 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				242510F0169D723E00BAA861 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -308,7 +435,6 @@
 		242510D5169D6F2600BAA861 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -323,7 +449,6 @@
 		242510D6169D6F2600BAA861 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -333,6 +458,33 @@
 				PRODUCT_NAME = DCTSafariActivity;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		242510FF169D723E00BAA861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTSafariActivityDemo/DCTSafariActivityDemo-Prefix.pch";
+				INFOPLIST_FILE = "DCTSafariActivityDemo/DCTSafariActivityDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		24251100169D723E00BAA861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTSafariActivityDemo/DCTSafariActivityDemo-Prefix.pch";
+				INFOPLIST_FILE = "DCTSafariActivityDemo/DCTSafariActivityDemo-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -361,6 +513,14 @@
 			buildConfigurations = (
 				242510D5169D6F2600BAA861 /* Debug */,
 				242510D6169D6F2600BAA861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		242510FE169D723E00BAA861 /* Build configuration list for PBXNativeTarget "DCTSafariActivityDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				242510FF169D723E00BAA861 /* Debug */,
+				24251100169D723E00BAA861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

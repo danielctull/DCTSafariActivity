@@ -48,8 +48,12 @@
 + (UIImage *)imageNamed:(NSString *)name {
 	NSInteger scale = (NSInteger)[[UIScreen mainScreen] scale];
 	NSBundle *bundle = [self bundle];
+	NSString *device = @"";
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+		device = @"~ipad";
 	while (scale > 0) {
-		NSString *resourceName = (scale == 1) ? name : [NSString stringWithFormat:@"%@@%ix", name, scale];
+		NSString *scaleString = (scale == 1) ? @"" : [NSString stringWithFormat:@"@%ix", scale];
+		NSString *resourceName = [NSString stringWithFormat:@"%@%@%@", name, device, scaleString];
 		NSString *path = [bundle pathForResource:resourceName ofType:@"png"];
 		UIImage *image = [UIImage imageWithContentsOfFile:path];
 		if (image) return image;
