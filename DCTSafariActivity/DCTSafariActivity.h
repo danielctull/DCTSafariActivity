@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface DCTSafariActivity : NSObject
-
+@interface DCTSafariActivity : UIActivity
 @end

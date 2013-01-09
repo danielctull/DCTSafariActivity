@@ -8,6 +8,71 @@
 
 #import "DCTSafariActivity.h"
 
-@implementation DCTSafariActivity
+@implementation DCTSafariActivity {
+	NSURL *_URL;
+}
+
+- (NSString *)activityType {
+	return [[NSBundle mainBundle] bundleIdentifier];
+}
+
+- (NSString *)activityTitle {
+	return NSLocalizedString(@"Open in Safari", @"DCTSafariActivity");
+}
+
+- (UIImage *)activityImage {
+	return [[self class] imageNamed:@"DCTSafariActivity"];
+}
+
+- (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
+	return [self URLinActivityItems:activityItems] != nil;
+}
+
+- (void)prepareWithActivityItems:(NSArray *)activityItems {
+	_URL = [self URLinActivityItems:activityItems];
+}
+
+- (void)performActivity {
+	[[UIApplication sharedApplication] openURL:_URL];
+}
+
+- (NSURL *)URLinActivityItems:(NSArray *)activityItems {
+	__block NSURL *URL;
+	[activityItems enumerateObjectsUsingBlock:^(id object, NSUInteger idx, BOOL *stop) {
+		*stop = [object isKindOfClass:[NSURL class]];
+		if (*stop) URL = object;
+	}];
+	return URL;
+}
+
++ (UIImage *)imageNamed:(NSString *)name {
+	NSInteger scale = (NSInteger)[[UIScreen mainScreen] scale];
+	NSBundle *bundle = [self bundle];
+	while (scale > 0) {
+		NSString *resourceName = (scale == 1) ? name : [NSString stringWithFormat:@"%@@%ix", name, scale];
+		NSString *path = [bundle pathForResource:resourceName ofType:@"png"];
+		UIImage *image = [UIImage imageWithContentsOfFile:path];
+		if (image) return image;
+		scale--;
+	}
+	return nil;
+}
+
++ (NSBundle *)bundle {
+	static NSBundle *bundle = nil;
+	static dispatch_once_t bundleToken;
+	dispatch_once(&bundleToken, ^{
+		NSDirectoryEnumerator *enumerator = [[NSFileManager new] enumeratorAtURL:[[NSBundle mainBundle] bundleURL]
+													  includingPropertiesForKeys:nil
+																		 options:NSDirectoryEnumerationSkipsHiddenFiles
+																	errorHandler:NULL];
+
+		NSString *bundleName = [NSString stringWithFormat:@"%@.bundle", NSStringFromClass([self class])];
+		for (NSURL *URL in enumerator)
+			if ([[URL lastPathComponent] isEqualToString:bundleName])
+				bundle = [NSBundle bundleWithURL:URL];
+	});
+	return bundle;
+}
 
 @end
