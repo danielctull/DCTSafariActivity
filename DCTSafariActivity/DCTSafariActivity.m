@@ -52,7 +52,7 @@
 	//if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 	//	device = @"~ipad";
 	while (scale > 0) {
-		NSString *scaleString = (scale == 1) ? @"" : [NSString stringWithFormat:@"@%ix", scale];
+		NSString *scaleString = (scale == 1) ? @"" : [NSString stringWithFormat:@"@%@x", @(scale)];
 		NSString *resourceName = [NSString stringWithFormat:@"%@%@%@", name, device, scaleString];
 		NSString *path = [bundle pathForResource:resourceName ofType:@"png"];
 		UIImage *image = [UIImage imageWithContentsOfFile:path];
