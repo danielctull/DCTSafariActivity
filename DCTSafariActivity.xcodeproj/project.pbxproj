@@ -78,6 +78,7 @@
 		24251108169D764300BAA861 /* DCTSafariActivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DCTSafariActivity.png; sourceTree = "<group>"; };
 		24251109169D764300BAA861 /* DCTSafariActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DCTSafariActivity@2x.png"; sourceTree = "<group>"; };
 		24251111169D7EBA00BAA861 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		244F132F17FEB2790016E94E /* Architectures.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
 		248844C9169D80470069E80C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		248844CB169D819E0069E80C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		248844CC169D81A50069E80C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		242510AA169D6F0600BAA861 = {
 			isa = PBXGroup;
 			children = (
+				244F132F17FEB2790016E94E /* Architectures.xcconfig */,
 				242510BA169D6F0600BAA861 /* DCTSafariActivity */,
 				242510CD169D6F2500BAA861 /* DCTSafariActivityBundle */,
 				242510EC169D723E00BAA861 /* DCTSafariActivityDemo */,
@@ -429,8 +431,8 @@
 		};
 		242510C4169D6F0600BAA861 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244F132F17FEB2790016E94E /* Architectures.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/DCTSafariActivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -441,8 +443,8 @@
 		};
 		242510C5169D6F0600BAA861 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244F132F17FEB2790016E94E /* Architectures.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DSTROOT = /tmp/DCTSafariActivity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -453,6 +455,7 @@
 		};
 		242510D5169D6F2600BAA861 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244F132F17FEB2790016E94E /* Architectures.xcconfig */;
 			buildSettings = {
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -467,6 +470,7 @@
 		};
 		242510D6169D6F2600BAA861 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244F132F17FEB2790016E94E /* Architectures.xcconfig */;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
