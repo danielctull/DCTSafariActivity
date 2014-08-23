@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Daniel Tull. All rights reserved.
 //
 
+@import DCTSafariActivity;
 #import "ViewController.h"
-#import <DCTSafariActivity/DCTSafariActivity.h>
 
 @interface ViewController () <UIPopoverControllerDelegate>
 @property (nonatomic) UIPopoverController *popover;

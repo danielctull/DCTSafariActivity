@@ -12,12 +12,17 @@
 		242510F3169D723E00BAA861 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 242510F2169D723E00BAA861 /* main.m */; };
 		242510F7169D723E00BAA861 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242510F6169D723E00BAA861 /* AppDelegate.m */; };
 		24251104169D725B00BAA861 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24251102169D725B00BAA861 /* ViewController.m */; };
-		24251105169D725B00BAA861 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24251103169D725B00BAA861 /* ViewController.xib */; };
-		24251106169D72A900BAA861 /* libDCTSafariActivity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242510B5169D6F0600BAA861 /* libDCTSafariActivity.a */; };
-		24251107169D72AC00BAA861 /* DCTSafariActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 242510CA169D6F2500BAA861 /* DCTSafariActivity.bundle */; };
 		2425110A169D764300BAA861 /* DCTSafariActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251108169D764300BAA861 /* DCTSafariActivity.png */; };
 		2425110B169D764300BAA861 /* DCTSafariActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251109169D764300BAA861 /* DCTSafariActivity@2x.png */; };
 		24251110169D7EBA00BAA861 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24251112169D7EBA00BAA861 /* Localizable.strings */; };
+		244DE8FF19A9360600A91DC7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24251103169D725B00BAA861 /* ViewController.xib */; };
+		244DE90019A9361C00A91DC7 /* DCTSafariActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244DE8E919A935AB00A91DC7 /* DCTSafariActivity.framework */; };
+		244DE90119A9361C00A91DC7 /* DCTSafariActivity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 244DE8E919A935AB00A91DC7 /* DCTSafariActivity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		244DE90519A9363100A91DC7 /* DCTSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 242510BF169D6F0600BAA861 /* DCTSafariActivity.m */; };
+		244DE90619A9363600A91DC7 /* DCTSafariActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 242510BD169D6F0600BAA861 /* DCTSafariActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244DE90719A9363F00A91DC7 /* DCTSafariActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251108169D764300BAA861 /* DCTSafariActivity.png */; };
+		244DE90819A9363F00A91DC7 /* DCTSafariActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251109169D764300BAA861 /* DCTSafariActivity@2x.png */; };
+		244DE90919A936A800A91DC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24251112169D7EBA00BAA861 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 242510C9169D6F2500BAA861;
 			remoteInfo = DCTSafariActivityBundle;
+		};
+		244DE90219A9361C00A91DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 242510AC169D6F0600BAA861 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244DE8E819A935AB00A91DC7;
+			remoteInfo = "DCTSafariActivity iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +51,17 @@
 			files = (
 				242510BE169D6F0600BAA861 /* DCTSafariActivity.h in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244DE90419A9361C00A91DC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				244DE90119A9361C00A91DC7 /* DCTSafariActivity.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -70,6 +93,7 @@
 		244DE8E119A92F2300A91DC7 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		244DE8E219A92F2300A91DC7 /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
 		244DE8E319A9301500A91DC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		244DE8E919A935AB00A91DC7 /* DCTSafariActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTSafariActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		248844C9169D80470069E80C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		248844CB169D819E0069E80C /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		248844CC169D81A50069E80C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -99,7 +123,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24251106169D72A900BAA861 /* libDCTSafariActivity.a in Frameworks */,
+				244DE90019A9361C00A91DC7 /* DCTSafariActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244DE8E519A935AB00A91DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +154,7 @@
 				242510B5169D6F0600BAA861 /* libDCTSafariActivity.a */,
 				242510CA169D6F2500BAA861 /* DCTSafariActivity.bundle */,
 				242510E5169D723E00BAA861 /* DCTSafariActivity Demo.app */,
+				244DE8E919A935AB00A91DC7 /* DCTSafariActivity.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +212,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		244DE8E619A935AB00A91DC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244DE90619A9363600A91DC7 /* DCTSafariActivity.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		242510B4169D6F0600BAA861 /* DCTSafariActivity */ = {
 			isa = PBXNativeTarget;
@@ -223,15 +266,35 @@
 				242510E1169D723E00BAA861 /* Sources */,
 				242510E2169D723E00BAA861 /* Frameworks */,
 				242510E3169D723E00BAA861 /* Resources */,
+				244DE90419A9361C00A91DC7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				244DE90319A9361C00A91DC7 /* PBXTargetDependency */,
 			);
 			name = "DCTSafariActivity Demo";
 			productName = DCTSafariActivityDemo;
 			productReference = 242510E5169D723E00BAA861 /* DCTSafariActivity Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		244DE8E819A935AB00A91DC7 /* DCTSafariActivity iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244DE8F919A935AB00A91DC7 /* Build configuration list for PBXNativeTarget "DCTSafariActivity iOS" */;
+			buildPhases = (
+				244DE8E419A935AB00A91DC7 /* Sources */,
+				244DE8E519A935AB00A91DC7 /* Frameworks */,
+				244DE8E619A935AB00A91DC7 /* Headers */,
+				244DE8E719A935AB00A91DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCTSafariActivity iOS";
+			productName = "DCTSafariActivity iOS";
+			productReference = 244DE8E919A935AB00A91DC7 /* DCTSafariActivity.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -241,6 +304,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Daniel Tull";
+				TargetAttributes = {
+					244DE8E819A935AB00A91DC7 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 242510AF169D6F0600BAA861 /* Build configuration list for PBXProject "DCTSafariActivity" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -264,6 +332,7 @@
 			projectRoot = "";
 			targets = (
 				242510B4169D6F0600BAA861 /* DCTSafariActivity */,
+				244DE8E819A935AB00A91DC7 /* DCTSafariActivity iOS */,
 				242510C9169D6F2500BAA861 /* DCTSafariActivity Bundle */,
 				242510E4169D723E00BAA861 /* DCTSafariActivity Demo */,
 			);
@@ -285,8 +354,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24251107169D72AC00BAA861 /* DCTSafariActivity.bundle in Resources */,
-				24251105169D725B00BAA861 /* ViewController.xib in Resources */,
+				244DE8FF19A9360600A91DC7 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244DE8E719A935AB00A91DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244DE90719A9363F00A91DC7 /* DCTSafariActivity.png in Resources */,
+				244DE90819A9363F00A91DC7 /* DCTSafariActivity@2x.png in Resources */,
+				244DE90919A936A800A91DC7 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +396,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		244DE8E419A935AB00A91DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244DE90519A9363100A91DC7 /* DCTSafariActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -325,6 +411,11 @@
 			isa = PBXTargetDependency;
 			target = 242510C9169D6F2500BAA861 /* DCTSafariActivity Bundle */;
 			targetProxy = 242510D7169D6F5800BAA861 /* PBXContainerItemProxy */;
+		};
+		244DE90319A9361C00A91DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244DE8E819A935AB00A91DC7 /* DCTSafariActivity iOS */;
+			targetProxy = 244DE90219A9361C00A91DC7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,6 +488,7 @@
 			baseConfigurationReference = 244DE8DB19A92F2300A91DC7 /* iOS Application.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
 		};
@@ -405,6 +497,33 @@
 			baseConfigurationReference = 244DE8DB19A92F2300A91DC7 /* iOS Application.xcconfig */;
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+			};
+			name = Release;
+		};
+		244DE8FA19A935AB00A91DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8DD19A92F2300A91DC7 /* iOS Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DCTSafariActivity;
+			};
+			name = Debug;
+		};
+		244DE8FB19A935AB00A91DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DE8DD19A92F2300A91DC7 /* iOS Framework.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = DCTSafariActivity;
 			};
 			name = Release;
 		};
@@ -446,6 +565,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		244DE8F919A935AB00A91DC7 /* Build configuration list for PBXNativeTarget "DCTSafariActivity iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244DE8FA19A935AB00A91DC7 /* Debug */,
+				244DE8FB19A935AB00A91DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
