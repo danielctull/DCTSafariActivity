@@ -23,6 +23,7 @@
 		244DE90719A9363F00A91DC7 /* DCTSafariActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251108169D764300BAA861 /* DCTSafariActivity.png */; };
 		244DE90819A9363F00A91DC7 /* DCTSafariActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24251109169D764300BAA861 /* DCTSafariActivity@2x.png */; };
 		244DE90919A936A800A91DC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24251112169D7EBA00BAA861 /* Localizable.strings */; };
+		244DE92019A9397800A91DC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244DE8E319A9301500A91DC7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244DE92019A9397800A91DC7 /* Images.xcassets in Resources */,
 				244DE8FF19A9360600A91DC7 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
