@@ -8,9 +8,11 @@
 
 #import "DCTSafariActivity.h"
 
-@implementation DCTSafariActivity {
-	NSURL *_URL;
-}
+@interface DCTSafariActivity ()
+@property (nonatomic) NSURL *URL;
+@end
+
+@implementation DCTSafariActivity
 
 - (NSString *)activityType {
 	return [[NSBundle mainBundle] bundleIdentifier];
@@ -29,11 +31,11 @@
 }
 
 - (void)prepareWithActivityItems:(NSArray *)activityItems {
-	_URL = [self URLinActivityItems:activityItems];
+	self.URL = [self URLinActivityItems:activityItems];
 }
 
 - (void)performActivity {
-	[[UIApplication sharedApplication] openURL:_URL];
+	[[UIApplication sharedApplication] openURL:self.URL];
 }
 
 - (NSURL *)URLinActivityItems:(NSArray *)activityItems {
@@ -49,8 +51,8 @@
 	NSInteger scale = (NSInteger)[[UIScreen mainScreen] scale];
 	NSBundle *bundle = [self bundle];
 	NSString *device = @"";
-	//if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-	//	device = @"~ipad";
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+		device = @"~ipad";
 	while (scale > 0) {
 		NSString *scaleString = (scale == 1) ? @"" : [NSString stringWithFormat:@"@%@x", @(scale)];
 		NSString *resourceName = [NSString stringWithFormat:@"%@%@%@", name, device, scaleString];
@@ -63,6 +65,9 @@
 }
 
 + (NSBundle *)bundle {
+#ifdef FRAMEWORK
+	return [NSBundle bundleForClass:self];
+#else
 	static NSBundle *bundle = nil;
 	static dispatch_once_t bundleToken;
 	dispatch_once(&bundleToken, ^{
@@ -77,6 +82,7 @@
 				bundle = [NSBundle bundleWithURL:URL];
 	});
 	return bundle;
+#endif
 }
 
 @end
